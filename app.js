@@ -17,14 +17,18 @@
 (function() {
     
     var mod = angular.module("main");
-    mod.controller("mainController", ["$scope", controller]);
+    mod.controller("mainController", ["$scope", "$http", controller]);
     
-    function controller($scope) {
+    function controller($scope, $http) {
         
-        alert('hey we are in the controller');
+        $scope.contact = {};
         
         $scope.sendMail = function() {
             alert('send mail');
+            var url = "http://aspevia-webapi.azurewebsites.net/api/Forms";
+            $http.post(url, $scope.contact).then(function(response) {
+                alert(response.data);
+            });
         };
         
     }
