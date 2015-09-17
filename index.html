@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Aspevia Systems</title>
+    <meta name="description" content="Sense gelevanog">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ///  google font - Open Sans  /// -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <!-- ///  font awesome - iconic font  /// -->
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- ///  eleagant font - iconic font  /// -->
+    <link href="assets/fonts/elegant-font/style.css" rel="stylesheet">
+    <!-- ///  bootsrap css - framework  /// -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ///  all plugins  /// -->
+    <link href="assets/css/plugins/plugins.css" rel="stylesheet">
+    <!-- ///  main css  /// -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!-- ///  responsive css  /// -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    
+    
+    <!-- bower:css -->
+    <!-- endbower -->
+    
+
+    <style>
+        .box {
+            background: #fff;
+            transition: all 0.2s ease;
+            border: 2px dashed #dadada;
+            margin-top: 10px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            background-clip: padding-box;
+            padding: 0 20px 20px 20px;
+            min-height: 340px;
+        }
+        
+        .box:hover {
+            border: 2px solid #525C7A;
+        }
+        
+        .box span.box-title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        
+        .box .box-content {
+            padding: 16px;
+            border-radius: 0 0 2px 2px;
+            background-clip: padding-box;
+            box-sizing: border-box;
+        }
+        
+        .box .box-content p {
+            color: #515c66;
+            text-transform: none;
+        }
+        
+        .tech-image {
+            margin-top: 60px;
+            width: 220px;
+            padding: 10px;
+        }
+        
+        .icon-wrapper a:hover {
+            background-color: lightgray;
+        }
+        
+    </style>
+
+</head>
+
+<body ng-app="app" ng-controller="mainController">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="preloader">
+        <img src="assets/img/Preloader_8.gif" alt="">
+    </div>
+    <header class="main-header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-default" role="navigation">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><i class=""></i> Aspevia Systems</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right" id="nav">
+                            <li class="active"><a href="#home">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-home fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Tech Stack <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#angular">Angular</a></li>
+                                    <li><a href="#ionic">Ionic</a></li>
+                                    <li><a href="#webapi">Web API</a></li>
+                                    <li><a href="#mongodb">Mongo DB</a></li>
+                                    <li><a href="#sqlserver">SQL Server</a></li>
+                                    <li><a href="#azure">Azure</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contacts">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ///  start promo  /// -->
+    <section class="promo static" style="background-image: url(assets/img/main-bg.jpg)" id="home">
+        <div class="promo-block wow bounceIn" data-wow-duration="2s">
+            <h1 class="lead">Web and mobile development <br>in the new era</h1>
+            <div class="buttons">
+                <ul class="list-inline">
+                    <li><a href="#techstack" class="btn btn-primary btn-lg">Technology Stack</a></li>
+                    <li><a href="#services" class="btn btn-white btn-lg">Our Process</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ///  services  /// -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="heading-section wow bounceIn" data-wow-duration="1.6s">
+                <h1>Services</h1>
+                <div class="separator"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 wow slideInRight" data-wow-duration="1s">
+                    <div class="icon-wrapper">
+                        <a href="#analysis">
+                            <i class="fa fa-stack-exchange"></i>
+                        </a>
+                    </div>
+                    <div class="text-section">
+                        <h3>Full Stack Development</h3>
+                        <p>Mobile, Web, REST APIs, Cloud, ORM. We've got you covered.</p>
+                        <a href="#techstack" class="btn btn-gray btn-sm">view more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow slideInRight" data-wow-duration="1.4s">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-mobile"></i>
+                    </div>
+                    <div class="text-section">
+                        <h3>Mobile Apps</h3>
+                        <p>Powerful cloud-based, cross-platform mobile applications</p>
+                        <a href="#ionic" class="btn btn-gray btn-sm">view more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow slideInRight" data-wow-duration="1.2s">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="text-section">
+                        <h3>Rich Web Applications</h3>
+                        <p>Responsive, browser-rich single page web applications.</p>
+                        <a href="#angular" class="btn btn-gray btn-sm">view more</a>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow slideInRight" data-wow-duration="1.6s">
+                    <div class="icon-wrapper">
+                        <i class="fa fa-cloud"></i>
+                    </div>
+                    <div class="text-section">
+                        <h3>Cloud</h3>
+                        <p>Develop for the cloud, in the cloud. Scalable. Reliable. Interoperable.</p>
+                        <a href="#azure" class="btn btn-gray btn-sm">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="techstack section" id="techstack">
+        <div class="container">
+            <div class="heading-section wow bounceIn" data-wow-duration="1.6s">
+                <h1>Technology Stack</h1>
+                <div class="separator"></div>
+            </div>
+
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="angular">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/angular.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">AngularJS</h1>
+                                    <hr />
+                                    <p>Angular has become the defacto leading technology for today's modern, single-page browser-rich web applications.</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="ionic">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/ionic.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">Ionic</h1>
+                                    <hr />
+                                    <p>Ionic + AngularJS equals powerful cross-platform mobile apps</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="webapi">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/webapi.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">ASP.NET Web API</h1>
+                                    <hr />
+                                    <p>ASP.NET Web API provides a powerful platform for building REST services for mobile and web applications.  Web API also is a key technology for distributing services to the Cloud.</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="mongodb">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/mongodb.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">Mongo DB</h1>
+                                    <hr />
+                                    <p>Mongo DB is the most popular No-SQL database on the market today.  No-SQL solutions can provide faster and simpler development for some types of applications where a relational structure is not needed.</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="sqlserver">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/sqlserver.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">SQL Server</h1>
+                                    <hr />
+                                    <p>Microsoft SQL Server along with Entity Framework provides robust and scalable persistence.</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wow slideInRight" data-wow-duration="1.4s" id="azure">
+                <div class="container">
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <img src=" img/azure.jpg" class="tech-image" />
+                        </div>
+                        <div class="col-md-6 text-center col-md-offset-0 ">
+                            <div class="box ">
+                                <div class="box-content ">
+                                    <h1 class="tag-title ">Azure Cloud Services</h1>
+                                    <hr />
+                                    <p>Apps can be built using Microsoft Azure Services: Web App, API App, Mobile App..</p>
+                                    <br />
+                                    <a href="ppc.html " class="btn btn-block btn-primary ">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ///  contacts  /// -->
+    <section class="contacts section" id="contacts">
+        <div class="container ">
+            <div class="heading-section wow bounceIn " data-wow-duration="1.6s ">
+                <h1>Contact Us</h1>
+                <div class="separator "></div>
+            </div>
+            <div class="row wow flipInY " data-wow-duration="1.4s ">
+                <div class="col-sm-12 ">
+                    <div class="alert alert-success alert-dismissable " style="display:none " id="contactUsAlert ">
+                        <button type="button " class="close " data-dismiss="alert " aria-hidden="true ">&times;</button>
+                        Thank you. Your message has been sent!
+                    </div>
+                </div>
+                <form class="col-sm-8" role="form" id="contactForm"
+                  action="mailto:tdekoekkoek@gmail.com" method="get" enctype="text/plain">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control " placeholder="NAME " data-validation="required" id="userName" name="name">
+                            </div>
+                            <div class="form-group ">
+                                <input type="email" class="form-control" data-validation="email " placeholder="EMAIL" id="userEmail " name="email ">
+                            </div>
+                            <div class="form-group ">
+                                <input type="text " class="form-control " placeholder="SUBJECT " data-validation="required " id="userSubj " name="subj ">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <div class="form-group ">
+                                <textarea class="form-control " placeholder="MESSAGE " data-validation="required " name="message " id="userMessage "></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" name="submit" class="btn btn-primary btn-block" ng-click="sendMail()">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-sm-4 ">
+                    <ul class="list-unstyled contacts-list ">
+                        <li>
+                            <div class="icon-wrapper "><i class="fa fa-map-marker "></i></div> 263 Valley Ridge Drive, Roswell, GA</li>
+<!--
+                        <li>
+                            <div class="icon-wrapper "><i class="fa fa-envelope "></i></div> <a href=" ">example@example.com</a></li>
+-->
+                        <li>
+                            <div class="icon-wrapper "><i class="fa fa-phone "></i></div> +1 770 910 2400</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ///  map  /// -->
+    <section class="map " id="map " data-location="West Kinzie, 20, Chicago "></section>
+
+    <!-- ///  footer  /// -->
+    <footer class="main-footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-sm-6 social ">
+                    <ul class="list-inline ">
+                        <li><a href=" " class="btn btn-primary "><i class="fa fa-facebook-square "></i></a></li>
+                        <li><a href=" " class="btn btn-primary "><i class="fa fa-twitter-square "></i></a></li>
+                        <li><a href=" " class="btn btn-primary "><i class="fa fa-google-plus-square "></i></a></li>
+                        <li><a href=" " class="btn btn-primary "><i class="fa fa-linkedin-square "></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 ">
+                    <div class="copy ">
+                        <p>&copy; All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ///  start scripts  /// -->
+    <script src="assets/js/libs/modernizr-2.6.2-respond-1.1.0.min.js "></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false "></script>
+    <script src="assets/js/libs/jquery-1.11.0.min.js "></script>
+    <script src="assets/js/plugins/gmap3/gmap3.min.js "></script>
+    <script src="assets/js/plugins/isotope/isotope.pkgd.min.js "></script>
+    <script src="assets/js/plugins/lightbox/lightbox.min.js "></script>
+    <script src="assets/js/plugins/scrollTo/jquery.scrollTo.js "></script>
+    <script src="assets/js/plugins/nav/jquery.nav.js "></script>
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <script src="assets/js/plugins/countdown/countdown.js "></script>
+    <script src="assets/js/plugins/placeholder/jquery.placeholder.js "></script>
+    <script src="assets/js/plugins/validator/jquery.form-validator.min.js "></script>
+    <script src="assets/js/plugins/wow/wow.min.js "></script>
+    <script src="assets/js/main.js "></script>
+    <script src="assets/js/vendor/angular/angular.js"></script>
+    
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
