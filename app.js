@@ -15,16 +15,16 @@
     );
 
 })();
-(function() {
-    
-    
-    angular.module('main').config(["$stateProvider", routes]);
-
-    var moduleBaseUrl = '/';
-    var moduleViewsDir = moduleBaseUrl + "views/";
-
+//(function() {
+//    
+//    
+//    angular.module('main').config(["$stateProvider", routes]);
+//
+//    var moduleBaseUrl = '/';
+//    var moduleViewsDir = moduleBaseUrl + "views/";
+//
 //    function routes($stateProvider) {
-
+//
 //        $stateProvider.state('tech-info', {
 //            url: '/tech-info',
 //            templateUrl: moduleViewsDir + "tech-info.html",
@@ -35,8 +35,8 @@
 //            }
 //        });
 //    }
-    
-})();
+//    
+//})();
 (function() {
     
     var mod = angular.module("main");
