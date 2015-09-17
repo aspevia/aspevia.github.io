@@ -26,7 +26,6 @@
         $scope.sendMail = function() {
             var url = "http://aspevia-webapi.azurewebsites.net/api/Forms";
             $http.post(url, $scope.contact).then(function(response) {
-                alert(response.data);
             });
         };
         
