@@ -2,6 +2,7 @@
     'use strict';
 
     var mod = angular.module('main', [
+        // 'ui.router'  // Be aware that ui-router will break the inline hrefs in our parallex theme
     ]);
 
 })();
@@ -13,6 +14,28 @@
         ]
     );
 
+})();
+(function() {
+    
+    
+    angular.module('main').config(["$stateProvider", routes]);
+
+    var moduleBaseUrl = '/';
+    var moduleViewsDir = moduleBaseUrl + "views/";
+
+//    function routes($stateProvider) {
+
+//        $stateProvider.state('tech-info', {
+//            url: '/tech-info',
+//            templateUrl: moduleViewsDir + "tech-info.html",
+//            controller: function($scope) {
+//                $scope.options = {
+//                    title: "Angular Info"
+//                };
+//            }
+//        });
+//    }
+    
 })();
 (function() {
     
